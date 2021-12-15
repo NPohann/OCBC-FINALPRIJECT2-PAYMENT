@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card shadow-lg col-5">
+        <div class="auth-wrapper col-10" >
+            <form class="form-signup" [formGroup]="signupForm" (ngSubmit)="registerUser()">
+                <h3 class="text-center"><b>Sign Up</b></h3>
+                <div class="form-group mt-3" >
+                    <label><b>Username</b></label>
+                    <input type="text" class="form-control" formControlName="username" placeholder="Enter Username" required>
+                    <span style="color: red;" *ngIf="username && username.touched && username.invalid">
+                        Username is required. Min length is 5
+                    </span>
+                </div>
+                <div class="form-group mt-3" >
+                    <label><b>Email</b></label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="Enter Email" required>
+                    <span style="color: red;" *ngIf="email && email.touched && email.invalid">
+                        Email is required. Must input email type
+                    </span>
+                </div>
+                <div class="form-group mt-3" >
+                    <label><b>Password</b></label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Enter Password" required>
+                    <span style="color: red;" *ngIf="password && password.touched && password.invalid">
+                        Password is required. Min length is 5
+                    </span>
+                </div>
+                <button type="submit" class="btn btn-block">Sign Up</button>
+            </form>
+            <div class="login col-12">
+                <p class="text-center">Already have an account?</p>
+                <a (click)="navigateLogin()">Signin</a>
+            </div>
+        </div>
+    </div>
+</div>
+

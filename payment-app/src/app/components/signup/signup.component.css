@@ -1,0 +1,40 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    color:#ae0001;
+}
+
+.card {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    padding: 20px;
+    margin: auto;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    color: white;
+    background-color:#ae0001;
+    width: 100%;
+}
+
+.login {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    color: black;
+}
+
+a{
+    text-align: center;
+    align-items: center;
+    color: #ae0001;
+    cursor: pointer;
+}

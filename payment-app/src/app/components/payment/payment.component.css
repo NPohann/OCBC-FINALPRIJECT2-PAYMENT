@@ -1,0 +1,36 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    color: #ae0001;
+}
+
+.card {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #ae0001;
+    color: white;
+}
+
+.btn-add {
+    margin-bottom: 30px;
+}
+
+.btn-edit, .btn-delete {
+    margin-right: 15px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+th {
+    width: 25%;
+}
+

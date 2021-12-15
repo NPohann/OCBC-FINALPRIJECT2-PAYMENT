@@ -1,0 +1,39 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    color:#ae0001;
+}
+
+.card {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    padding: 20px;
+    margin: auto;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #ae0001;
+    width: 100%;
+    color: white;
+}
+
+.register {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    color: black;
+}
+
+a{
+    text-align: center;
+    align-items: center;
+    color: #ae0001;
+    cursor: pointer;
+}

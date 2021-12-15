@@ -1,0 +1,32 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    color: #ae0001;
+}
+
+.card {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    padding: 20px;
+    margin: auto;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #ae0001;
+    color: white;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.button-control {
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    padding-top: 30px;
+}

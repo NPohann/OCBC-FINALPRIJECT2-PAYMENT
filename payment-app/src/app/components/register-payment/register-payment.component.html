@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="card shadow-lg col-5">
+        <div class="auth-wrapper col-10">
+            <h3 class="title text-center"> <b>Payment Detail Register</b> </h3>
+            <form [formGroup]="form.addPaymentForm" (ngSubmit)="addPayment()">
+                <div class="form-group mt-3">
+                    <label for="title"><b>Card Owner Name</b></label>
+                    <input type="text" class="form-control" formControlName="cardOwnerName" placeholder="Full Name" required>
+                    <span style="color: red" *ngIf="cardOwnerName && cardOwnerName.touched && cardOwnerName.invalid">
+                        Card Owner Name is required. Min length is 5
+                    </span>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="title"><b>Card Number</b></label>
+                    <input type="text" class="form-control" formControlName="cardNumber" placeholder="10 Digit Card Number" required>
+                    <span style="color: red" *ngIf="cardNumber && cardNumber.touched && cardNumber.invalid">
+                        Card Number is required. Must 10 digits
+                    </span>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="title"><b>Security Code</b></label>
+                    <input type="passowrd" class="form-control" formControlName="securityCode" placeholder="Security Code" required>
+                    <span style="color: red" *ngIf="securityCode && securityCode.touched && securityCode.invalid">
+                        Security Code is required. Must 6 digits
+                    </span>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="title"><b>Validate Through</b></label>
+                    <input type="text" class="form-control" formControlName="expirationDate" placeholder="YYYY-MM-dd" required>
+                    <span style="color: red" *ngIf="expirationDate && expirationDate.touched && expirationDate.invalid">
+                        Expiration Date is required
+                    </span>
+                </div>
+                <div class="button-control">
+                    <button type="submit" class="btn btn-block btn-add">Add</button>
+                    <button type="button" class="btn btn-block btn-cancel" (click)="navigatePayment()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
